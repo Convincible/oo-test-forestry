@@ -11,3 +11,8 @@ fields:
 - type: list
   name: resources
   label: resources
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: resources

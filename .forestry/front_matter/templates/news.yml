@@ -1,4 +1,32 @@
 ---
 label: News
 hide_body: false
-fields: []
+fields:
+- name: authors
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: role
+    type: text
+    config:
+      required: false
+    label: Role
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Authors
+- name: related_resources
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: resources
+  label: Related Resources

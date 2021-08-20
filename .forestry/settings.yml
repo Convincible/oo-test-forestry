@@ -10,6 +10,8 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: documents
+  templates:
+  - news
 - type: directory
   path: _resources
   label: Resources

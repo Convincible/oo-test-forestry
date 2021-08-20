@@ -10,21 +10,11 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: documents
+- type: directory
+  path: _resources
+  label: Resources
+  create: all
   match: "**/*"
-- type: heading
-  label: English
-- type: directory
-  path: _resources
-  label: Resources
-  create: all
-  match: en/**/*
-- type: heading
-  label: Spanish
-- type: directory
-  path: _resources
-  label: Resources
-  create: all
-  match: es/**/*
 - type: directory
   path: _uploads
   label: Uploads

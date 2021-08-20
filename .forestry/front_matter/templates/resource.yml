@@ -16,3 +16,5 @@ fields:
     source:
       type: pages
       section: resources
+pages:
+- _resources/en/new-resource.md

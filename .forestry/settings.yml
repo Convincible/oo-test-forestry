@@ -4,23 +4,32 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: jekyll-pages
+  label: Pages
+  create: all
 - type: jekyll-posts
   label: Posts
-  create: all
+  create: documents
   match: "**/*"
+- type: heading
+  label: English
 - type: directory
   path: _resources
   label: Resources
   create: all
-  match: "**/*"
+  match: en/**/*
+- type: heading
+  label: Spanish
+- type: directory
+  path: _resources
+  label: Resources
+  create: all
+  match: es/**/*
 - type: directory
   path: _uploads
   label: Uploads
   create: all
   match: "**/*"
-- type: jekyll-pages
-  label: Pages
-  create: all
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
